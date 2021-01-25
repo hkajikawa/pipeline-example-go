@@ -19,11 +19,4 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
-notification:
-  recipients:
-  - recipient: '#alert-cloud-k8s'
-    notifier: c-jvtfz:n-j2qs5
-  condition:
-  - Success
-  - Changed
-  - Failed
+notification: {}
